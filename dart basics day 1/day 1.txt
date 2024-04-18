@@ -1,0 +1,394 @@
+
+import 'dart:developer';
+// ignore: avoid_print
+String uniName = "Uet_peshawar";
+void main() {
+  print("here is our first class");
+  print("my Uni name is $uniName");
+  print("here is my regNo" + regNo);
+
+  log("here is anohter method we use for print our statements");
+  
+  print("here is sum of 2 numbere ${10 + 20}");
+  log("here is we can add to value ${value + value2}");
+  log("print here the updated time $time");
+
+  if (value == value2 && value3 == value4 || value4 == value) {
+    print("print the statement");
+  } else if (classNo == classNo) {
+    print("here is else");
+  } else {}
+  print("here is the update list $stringData");
+
+  stringData.add("add4");
+  stringData.insert(2, "add3");
+ 
+  print("here is the update list $stringData");
+  print("here is list lenght ${stringData.length}");
+}
+
+//here is comment
+
+double value = 10.5;
+int value2 = 10;
+num value3 = 10.4;
+num value4 = 20;
+// int value5 = 10.4;
+
+//student data
+var regNo = "17swe0681";
+int classNo = 16;
+double weight = 50.9;
+String name = "xyz";
+dynamic department = "CSE";
+bool testing = (name == department);
+
+//string
+String name2 = "flutter";
+String name3 = 'flutter';
+
+String name4 = "it's easy";
+String name5 = 'it\'s easy';
+
+const int value10 = 20;
+
+final time = DateTime.now();
+
+List Listofname = [];
+List<String> stringData = ["add", "add2", "add3"];
+
+
+  
+//data_types
+//if else
+//List 
+
+/////////// more examples
+
+main() {
+  String uid = "sdkafshk2334432791";
+  //this is user name
+  print("the user name is the user name is the user name is  \$ $name");
+  print("the user name is " + name2);
+  print("the sum is of all var  ${sum1 + sum2}");
+  print("the current time is ${DateTime.now()}");
+  print("the pie value ${pie}");
+  print("print the dynmic value ${value1}");
+  print("print the dynmic value ${value}");
+  print("print the dynmic value ${value2}");
+  print("print the dynmic value ${value3}");
+  print("print the dynmic value ${value4}");
+  // print("print the dynmic value ${value5}");
+
+  //this is age
+  print(age);
+  //this is weight
+
+  print(weight);
+}
+
+const String nasir  = "nasir";
+final  name3  = "nasir";
+
+String name = "atiq Rehman";
+String name2 = name;
+
+int age = 22;
+
+int sum1 = 30;
+int sum2 = 40;
+// int sum3 = sum1 + sum2;
+
+double weight = 60.00;
+
+///////////const
+
+const pie = 3.14;
+final time = DateTime.now();
+
+dynamic value = "name";
+dynamic value1 = 10;
+dynamic value2 = -30;
+dynamic value3 = 670.888;
+dynamic value4 = true;
+
+
+
+////////////today work
+
+
+void main(){
+   //thismy first line code
+  print("this is our first flutter class");
+  print("this is my $name");
+  
+  //my uni name = 
+  print("my uni name is $uni_name");
+  print("my age is  $age");
+  print(age);
+  print("show me the studet is pass or fail $student_pass");
+  print('the addation is a+b is equal to ${a+b}');
+  print("the pie value is $pie");
+  print("the current time is $time.toString()");
+}
+
+
+
+String name = "abc";
+
+int a = 100;
+int b = 200;
+
+const pie = 3.14;
+final time = DateTime.now();
+
+
+String uni_name = "peshawar";
+String student_name = "adil";
+bool  student_pass = true;
+var reg_n = "1765mdswe";
+int age = 23;
+ double weight = 64.8;
+List<String> all_num  = ["first","second","thrid"];
+
+
+
+main() {
+/////////////////////////////////////////////////////if else
+  /////////////simple if else
+  // if (boolean == true) {
+  //   print("inside the if body");
+  //   print("the user name is correct");
+  // } else if (name == "XYZ") {
+  //   print("inside the nested body");
+  //   print("yes name is correct");
+  // } else {
+  //   print("inside the else body");
+  //   print("the user name is incorrect");
+  // }
+
+////////////////nested if else
+  // if (uni_name == student_no_1_uni) {
+  //   print("No the student is not our uni");
+  // } else if (uni_name == student_no_2_uni && reg_no == name) {
+  //   print("yes the student is this uni as well same reg no");
+  // } else if (uni_name == name || reg_no == name) {
+  //   print("yes the student is this uni but the reg is not correct");
+  // } else if (uni_name == student_no_2_uni && reg_no == student_no_2_reg &&
+  //     batch == student_no_2_batch) {
+  //   print(
+  //       "yes the student is this uni but the reg is  correct as well for same batch");
+  // } else {
+  //   print("try again");
+  // }
+
+  /////////////////////////////////////////////List
+
+  // print("all list $user_name");
+
+  // print("print the all list length  ${user_name.length}");
+  // print("first student name  ${user_name[0]}");
+  // var add_new_student = user_name.add("student_name_6");
+  // print("updated list is here $user_name");
+
+  // print("print the all list length  ${user_name.length}");
+  // var add_more_student = user_name.addAll(
+  //     {"student_name_7", "student_name_8", "student_name_9", "student_name_1"});
+  // print("final updated list is here $user_name");
+  // print("print the all list length  ${user_name.length}");
+  // var remove_student = user_name.removeAt(0);
+
+  // print("after remover updated list is here $user_name");
+  // print("print the all list length  ${user_name.length}");
+
+  // var reverse_order = user_name.reversed.toList();
+
+  // print("after reverse order updated list is here $reverse_order");
+  // print("print the all list length  ${user_name.length}");
+
+  // print(
+  //     "this is the all data of student NO 1 is here-------------> \n Name:${user_name[0]}  \n  student_UId:${user_id[0]}  \n  weight ${user_weight_data[0]}  \n  fee Submited ${fee_submitted[0]} ");
+}
+//////////////////////////////////////////////if else data
+// String name = "XYZ";
+// var uni_name = "UET peshawar";
+// var reg_no = "17mdswe456";
+// var batch = 16;
+// var semester = "7th";
+// ///student no 1
+// var student_no_1_uni = "city_uni";
+// ///student no 1
+// var student_no_2_uni = "UET peshawar";
+// var student_no_2_reg = "17mdswe456";
+// var student_no_2_batch = 0;
+
+//////////////////////////////////list data
+
+// List<int> user_id = [
+//   0011,
+//   0022,
+//   0033,
+//   0044,
+//   0055,
+// ];
+// List<String> user_name = [
+//   "student_name_1",
+//   "student_name_2",
+//   "student_name_3",
+//   "student_name_4",
+//   "student_name_5",
+// ];
+// List<double> user_weight_data = [
+//   60.00,
+//   60.50,
+//   60.00,
+//   65.02,
+//   50.35,
+// ];
+// List<bool> fee_submitted = [
+//   true,
+//   false,
+//   true,
+//   false,
+//   true,
+// ];
+
+
+
+////////////class work
+
+main() {
+  print("hii this is my first program");
+  int? bmarks_1;
+
+  //simple if else
+  // if (student2UniName == uniName) {
+  //   print("yes this student =>$student1UniName is our unive $uniName ");
+  // } else {
+  //   print("this is not our student");
+  // }
+
+  // // and
+  // if (student1batch == batch && departmentName == student1DepartName) {
+  //   return print("same dep and same batch");
+  // } else {
+  //   print("not for this");
+  // }
+
+  // // or
+
+  // if (bookName == student2Book || batch == student2batch) {
+  //   bmarks_1 = 123;
+  //   int bmarks_2 = 345663;
+  //   var total = bmarks_2 + bmarks_2;
+  //   // int student_no2_reg = 123;
+  //   print("not for this $bmarks_1");
+  //   return print("show total $total");
+  // } else {
+  //   print("not for this $bmarks_1");
+  // }
+
+  //nestesd if
+
+//   if (percent == student1percent) {
+//     print("single value");
+// //body
+//   } else if (bookName == student2Book &&
+//       percent == student2percent &&
+//       batch == student2batch) {
+//     print("show 3 value");
+
+//     // body2
+//   } else if (uniName == student1UniName && student2UniName == uniName) {
+//     print("both are same universty");
+//   } else {
+//     print("try again");
+//   }
+
+  ///list data
+
+  print("print the list length ${student_ages.length}");
+  print(student_ages.length);
+
+  print(" without addition$student_ages");
+
+  student_ages.add(22);
+
+  print(" with addition$student_ages");
+
+  student_ages.addAll([1, 2, 3, 4]);
+
+  print(" with addition$student_ages");
+
+  var reverse = student_ages.reversed.toList();
+  print("reverse list $reverse");
+
+  student_ages.remove(22);
+
+  print(student_ages);
+
+  student_ages.removeAt(2);
+  student_name.add("rehaman");
+  print("all student name $student_name");
+
+  print("removed index 2 $student_ages");
+
+  if (student_ages.isNotEmpty) {
+    student_ages.add(45555);
+    print(student_ages);
+  }
+
+  print(
+      "all data of student No 1 \n  Age==> ${student_ages[0]} \n Name ==> ${student_name[0]}  \n student_percentage ==> ${student_percentage[0]} ");
+}
+
+//uni data
+
+// String bookName = "DLD";
+// String departmentName = "CSE";
+// String uniName = "peshawar uni";
+// int batch = 15;
+// double percent = 65.89;
+
+// //student no 1
+
+// String student1Book = "DLD";
+// String student1DepartName = "TC";
+// String student1UniName = "peshawar uni";
+// int student1batch = 15;
+// double student1percent = 65.99;
+
+// //student no 2
+
+// String student2Book = "c++";
+// String student2DepartName = "TC";
+// String student2UniName = "peshawar uni";
+// int student2batch = 15;
+// double student2percent = 65.89;
+
+///////////////////list
+
+List<int> student_ages = [23, 24, 25, 26, 30];
+List<String> student_name = ["asad", "adil", "saqib", "salman", "raheel"];
+List<double> student_percentage = [
+  60.56,
+  40.66,
+  70.86,
+  90.56,
+  20.66,
+];
+List<bool> fee_pay_Student = [
+  true,
+  false,
+  true,
+  false,
+  true,
+];
+
+// List all_data = [1, 23.66, "string", true];
+
+
+
+
+
+
