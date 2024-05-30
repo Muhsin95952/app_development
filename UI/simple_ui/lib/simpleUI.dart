@@ -1,112 +1,66 @@
-//import 'dart:ui';
+class user {
+  String firstname;
+  String lastname;
+  List<book> books;
 
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:google_fonts/google_fonts.dart';
+  user({
+    required this.firstname, 
+    required this.lastname, 
+    required this.books});
 
-class simpleUI extends StatefulWidget {
-  const simpleUI({super.key});
+  factory user.fromJson(Map<String, dynamic> Json){
+    return user(
+      firstname: Json["firstname"], 
+      lastname: Json["lastname"], 
+      books: Json["books"]);
+  }
 
-  @override
-  State<simpleUI> createState() => _simpleUIState();
 }
 
-class _simpleUIState extends State<simpleUI> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.blue,
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        leading: Icon(
-          Icons.menu_sharp,
-          size: 30,
-          color: Colors.white,
-        ),
-        title: Center(
-          child: Text("Simple UI",
-              style: GoogleFonts.lobster(
-                  textStyle: TextStyle(fontSize: 25, color: Colors.white))),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 15.0),
-            child: Icon(Icons.person, color: Colors.white, size: 25,),
-          )],
-      ),
-      body: 
-       Column(
-        children: [
-         Expanded(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 16.0, top: 15.0),
-                    child: Text(
-                      "DashBoard",
-                      style: GoogleFonts.lobster(
-                        textStyle: TextStyle(fontSize: 30, color: Color.fromARGB(255, 244, 242, 242))
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 16.0),
-                    child: Text(
-                      "This is your Main Dashboard", 
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
-      Container(
-        color: Colors.white,
-        //decoration: BoxDecoration(borderRadius: BorderRadius.circular(16.0),
-       // ),
-        child: Expanded(
-              flex: 3,
-              child: Row(
-                children: [
-                  Column(
-                    children: [
-                      Row(
-                        
-                      ),
-                      Row(
-        
-                      ),
-                      Row(
-        
-                      )
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Row(
-                        
-                      ),
-                      Row(
-        
-                      ),
-                      Row(
-        
-                      )
-                    ],
-                  )
-                ],
-                
-              ),
-            ),
-      )
-        ],
-       )
-    );
+class book {
+  String title;
+  String author;
+  String details;
+  String bookCover;
+  double rating;
+  List<String> chapter;
+
+  book({
+    required this.title, 
+    required this.author, 
+    required this.details, 
+    required this.bookCover, 
+    required this.rating, 
+    required this.chapter});
+
+    factory book.fromJson(Map<String, dynamic> Json){
+      return book(
+        title: Json["title"],
+        author: Json["author"], 
+        details: Json["details"], 
+        bookCover: Json["bookCover"], 
+        rating: Json["rating"], 
+        chapter: Json["chapter"]
+        );
+    }
+}
+
+class chapter {
+  String title;
+  String description;
+  List<String> pages;
+
+  chapter({
+    required this.title, 
+    required this.description, 
+    required this.pages
+    }
+  );
+
+  factory chapter.fromJson(Map<String, dynamic> Json){
+    return chapter(
+      title: Json["title"], 
+      description: Json["description"], 
+      pages: Json["pages"]);
   }
 }
